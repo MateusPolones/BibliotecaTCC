@@ -1,0 +1,25 @@
+BIBLIOTECA OSWALDO WALDER
+
+=== A) Rodar no seu computador (XAMPP) ===
+1) Copie a pasta Biblioteca-TCC para C:\xampp\htdocs
+2) Ligue Apache e MySQL no painel do XAMPP
+3) No phpMyAdmin, abra o banco biblioteca_oswaldo_walder > aba SQL,
+   cole o conteudo de banco.sql e clique em Executar
+4) Abra http://localhost/Biblioteca-TCC/criar_admin.php (cria admin@biblioteca.com / admin123)
+5) APAGUE o arquivo criar_admin.php
+6) Entre em http://localhost/Biblioteca-TCC/
+
+=== B) Abrir no celular (mesmo Wi-Fi do computador) ===
+1) No computador, rode "ipconfig" no Prompt de Comando e anote o Endereco IPv4
+2) No celular, abra http://IP-DO-COMPUTADOR/Biblioteca-TCC/
+3) Se nao abrir, permita o Apache na rede privada do Firewall do Windows
+
+=== C) Publicar na internet (link para qualquer pessoa) ===
+Use uma hospedagem com PHP e MySQL (varias oferecem plano gratuito).
+1) Crie a conta e, no painel, crie um banco MySQL. Anote: servidor (host), usuario, senha e nome do banco
+2) Abra o phpMyAdmin da hospedagem, selecione o banco e importe/cole o banco.sql
+3) Edite config/conexao.php com os dados do banco da hospedagem
+4) Envie TODOS os arquivos da pasta para a pasta publica do site (htdocs ou public_html), por FTP ou pelo gerenciador de arquivos
+5) Abra SEU-ENDERECO/criar_admin.php uma vez, depois APAGUE esse arquivo
+6) Garanta que a pasta uploads/capas aceite gravacao (permissao de escrita) para o envio de capas
+O endereco do site e as pastas sao detectados automaticamente.
